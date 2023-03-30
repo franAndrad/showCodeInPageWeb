@@ -1,9 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+.bgAdd{
+  background-color: #85C1E9;
+}
+.mText{
+  margin-left: 190px;
+  margin-right: 190px;
+}
 .code-block {
   position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 800px;
+  max-width: 70%;
   margin: 0 auto;
   padding: 20px;
   background-color: #384047;
