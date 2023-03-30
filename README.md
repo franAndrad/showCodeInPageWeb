@@ -39,7 +39,11 @@ Salida `legiblePrismHtml.txt`
 ```
 
 ## Lenguajes 📌
+
 Si queremos agegar otros lenguajes, debemos entrar a la pagina y seleccionar la configuracion que deseemos y descargarla en la carpeta [Prism](https://prismjs.com/download.html#themes=prism-okaidia&languages=markup+css+clike+javascript+css-extras+js-extras+json+json5+jsonp+mongodb&)
+
+### Lenguaje en el codigo html
+Para poder especificar el lenguaje se lo hace cambiando la clase en <code class='language-xxxx'></code>, estas las encontramos en [Prism-languajes](https://prismjs.com/index.html#supported-languages)
 
 ## Autores ✒️
 * **Andrade Francisco** - [Git](https://github.com/franAndrad)
