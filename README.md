@@ -5,7 +5,7 @@ Este codigo te va a permitir mostrar y copiar un codigo escrito en un lenguaje d
 
 ### Descargar 📋
 ```
-git clone ......
+git clone https://github.com/franAndrad/showCodeInPageWeb.git
 ```
 
 ## Construido con 🛠️
