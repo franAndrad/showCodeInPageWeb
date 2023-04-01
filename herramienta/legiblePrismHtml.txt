@@ -1,5 +1,6 @@
-&lt;pre class="code"&gt;
-        &lt;code class="language-html"&gt;
-          &lt;h1&gt;Hola Mundo&lt;/h1&gt;
-        &lt;/code&gt;
-&lt;/pre&gt;
+&lt;div class="code-header justify-content-between"&gt;
+      &lt;div class="text-light"&gt;
+         &lt;p&gt;Ejemplo basico de html en javascript&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;button class="copy-btn" onclick="copyCode()"&gt;Copiar&lt;/button&gt;
+&lt;/div&gt;
