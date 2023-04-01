@@ -1,5 +1,5 @@
-function copyCode() {
-    const code = document.querySelector('.code');
+function copyCode(name) {
+    const code = document.querySelector('.'+name);
     const range = document.createRange();
     range.selectNode(code);
     window.getSelection().removeAllRanges();

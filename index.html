@@ -39,7 +39,7 @@
             
         <div class="code-header justify-content-between">
               <div class="text-light"><p>Ejemplo factorial en javascript</p></div>
-                <button class="copy-btn" onclick="copyCode()">Copiar</button>
+                <button class="copy-btn" onclick="copyCode('code')">Copiar</button>
               </div>
               <pre class="code">
                 <code class="language-javascript">
@@ -59,9 +59,9 @@
             <div class="text-light">
               <p>Ejemplo basico de html en javascript</p>
             </div>
-            <button class="copy-btn" onclick="copyCode()">Copiar</button>
+            <button class="copy-btn" onclick="copyCode('code2')">Copiar</button>
           </div>
-            <pre class="code">
+            <pre class="code2">
               <code class="language-html">
                 &lt;div class="code-header justify-content-between"&gt;
                   &lt;div class="text-light"&gt;
@@ -73,6 +73,17 @@
             </pre>
         </div>
 
+        <div class="code-block my-4 p-3">
+          <div class="code-header justify-content-between">
+            <div class="text-light">
+              <p>Ejemplo basico de html en javascript</p>
+            </div>
+            <button class="copy-btn" onclick="copyCode('code3')">Copiar</button>
+          </div>
+          <textarea id="codigo"></textarea>
+          <pre class="code3"><code id="codigo-resaltado" class="language-javascript"></code></pre>
+        </div>
+
       </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
@@ -80,7 +91,21 @@
       crossorigin="anonymous"
     ></script>
     <script src="./prism/prism.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-javascript.min.js"></script>
     <script src="./script.js"></script>
-
+    	<script>
+		// Obtener el textarea y el pre correspondiente
+		const codigo = document.getElementById('codigo');
+		const codigoResaltado = document.getElementById('codigo-resaltado');
+		// Agregar un event listener al textarea que se activa cuando se ingresa nuevo texto
+		codigo.addEventListener('input', () => {
+			// Obtener el contenido del textarea
+			const codigoTexto = codigo.value;
+			// Resaltar el contenido del textarea usando Prism
+			const codigoResaltadoHTML = Prism.highlight(codigoTexto, Prism.languages.javascript);
+			// Actualizar el contenido del pre con el código resaltado
+			codigoResaltado.innerHTML = codigoResaltadoHTML;
+		});
+	</script>
   </body>
 </html>
